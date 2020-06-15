@@ -16,11 +16,14 @@ a {
     text-decoration: none;
     color: #007bff;
 }
+a:hover {
+    text-decoration: underline;
+}
 a2 {
     text-decoration: none;
     color: #999;
 }
-a:hover {
+a2:hover {
     text-decoration: underline;
 }
 h1 {
