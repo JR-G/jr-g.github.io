@@ -28,10 +28,11 @@ a2:hover {
 }
 h1 {
     font-size: 3em;
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Arimo', serif;
 }
 p {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.4em;
     color: #333;
 }
