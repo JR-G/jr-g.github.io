@@ -37,6 +37,17 @@ p {
     line-height: 1.4em;
     color: #e7e7e7;
 }
+l.fill {
+  color: #1a88ff;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-weight: bold;
+}
+l.fill:hover {
+  background-color: #1a88ff;
+  color: white;
+  text-decoration: underline;
+}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
