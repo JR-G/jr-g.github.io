@@ -29,12 +29,13 @@ a2:hover {
 h1 {
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
+    color: #e7e7e7;
 }
 p {
     font-size: 1.4em;
     font-family: 'Roboto', sans-serif;
     line-height: 1.4em;
-    color: #333;
+    color: #e7e7e7;
 }
 footer {
     border-top: 1px solid #d5d5d5;
