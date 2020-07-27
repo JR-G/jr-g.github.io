@@ -1,44 +1,89 @@
 body {
-    margin: 60px auto;
-    width: 80%;
+    background: black;
+    width:100%;
+    height:100%;
 }
-nav ul, footer ul {
-    font-family: 'Roboto', sans-serif;
+#site-header {
+    margin:auto;
+    text-align:center;
+}
+#contact-list {
+    margin:auto;
+    text-align:center;
+    display: block;
+    width: 50%;
+    padding: 7rem;
+}
+
+nav ul{
+    font-family: 'Bentham', serif;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+
+}
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+nav ul.home{
+    font-family: 'Bentham', serif;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+}
+footer ul {
+    font-family: 'Bentham', serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 a {
     text-decoration: none;
-    color: #1a88ff;
+    color: #DFC7A4;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: line-through;
 }
-a2 {
-    text-decoration: none;
-    color: #999;
-}
-a2:hover {
-    text-decoration: underline;
-}
+
 h1 {
-    font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 6em;
+    font-family: 'Bentham', serif;
     color: #e7e7e7;
+    letter-spacing: 10px;
+    margin-bottom: -110px;
+    font-weight: 100;
+
 }
 p {
-    font-size: 1.4em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-family: 'Bentham', serif;
     line-height: 1.4em;
-    color: #e7e7e7;
+    color: #fff;
+    margin-top: 100px;
+    letter-spacing: 3px;
+}
+p.about-me {
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
+    line-height: 2em;
+    color: #fff;
+    letter-spacing: 0.3px;
 }
 l.fill {
-  color: #1a88ff;
+  color: #DFC7A4;
   transition: 0.4s;
   transition-timing-function: ease-in-out;
   font-weight: bold;
@@ -48,16 +93,23 @@ l.fill:hover {
   color: white;
   text-decoration: underline;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+.transition-fade {
+    opacity: 1;
+    transition: 700ms;
+}
+html.is-animating .transition-fade {
+    opacity: 1;
+    transition: 700ms;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+}
+.mdl-mini-footer--link-list, .mdl-mini-footer__link-list {
+    display: inline;
+    margin: 0;
+    padding:0;
+    list-style-type: none;
 }
 
-ul.posts li {
-    list-style: none;
-}
