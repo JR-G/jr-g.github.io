@@ -3,25 +3,29 @@
 	<head>
 		<title>💀 J R G 💀</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<script defer src="node_modules/swup/dist/swup.min.js"></script>
-		<script defer src="script.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-		
+		<link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/237/skull_1f480.png">
+		<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="application/javascript" src="animation.js"></script>
 	</head>
 	<body>
-		<main id="swup" class="transition-fade">
 			<nav>
 				<ul>
 					<li><a href="/about">WHO AM I</a></li>
 				</ul>
 			</nav>
-		<div id="site-header">
-			<h1>JAMES</h1>
-			<h1>GLENN</h1>
-			<p>LONDON</p>
-		</div><!-- /.site-header -->
-		</main>
+			<div class="moving-zone">
+				<div class="popup">
+					<div class="popup-text">
+						<p class="neon">JAMES
+						GLENN</p>
+						<p class="typewrite" data-period="2000" data-type='[ "LONDON", "SOFTWARE ENGINEER" ]'>
+							<span class="wrap"></span>
+						</p>
+					</div>
+				</div>
+			</div>
 		<footer>
     		<ul>
 				<li>
@@ -34,7 +38,13 @@
 						<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
 					</a>
 				</li>
+				<li>
+					<a href="https://www.linkedin.com">
+						<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
 			</ul>
 		</footer>
+		
 	</body>
 </html>
