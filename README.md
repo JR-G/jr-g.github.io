@@ -1,2 +1,2 @@
-# jr-g.github.io
-Personal Site
+# Personal Site
+
