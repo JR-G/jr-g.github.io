@@ -51,12 +51,35 @@ footer {
     bottom: 0;
     width: 100%;
 }
-a {
+a.nav {
+    text-decoration: none;
+    color: #DFC7A4;
+    opacity: .5;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: opacity .3s;
+    transition:opacity .3s
+}
+a.nav:hover {
+    color: #f2e8d9;
+    opacity: 1;
+}
+a.footer {
     text-decoration: none;
     color: #DFC7A4;
 }
-a:hover {
-    text-decoration: line-through;
+a.footer:hover {
+    color: #f2e8d9;
+    opacity: 1;
+}
+
+a.text {
+    text-decoration: none;
+    color: #DFC7A4;
+}
+a.text:hover {
+    color: #f2e8d9;
+    opacity: 1;
 }
 
 h1 {
@@ -70,10 +93,10 @@ h1 {
 p {
     font-size: 1.2em;
     font-family: 'Bentham', serif;
-    line-height: 0.72em;
+    line-height: 0.69em;
     color: #fff;
-    margin-top: 0.5em;
-    letter-spacing: 0.17em;
+    margin-top: 0.4em;
+    letter-spacing: 0.08em;
 }
 p.about-me {
     font-size: 1.3em;
@@ -96,7 +119,7 @@ l.fill:hover {
 
 .moving-zone {
     position: absolute;
-    top:30%; left:45%;
+    top:30%; left:47%;
     width:300px; height:120px;
     margin:-60px 0 0 -150px;
     perspective: 800px;
@@ -106,7 +129,6 @@ l.fill:hover {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px 0 20px 0;
-    cursor: pointer;
     transform-style: preserve-3d;
 }
 .popup:before {
@@ -125,7 +147,7 @@ l.fill:hover {
     font-weight: 100;
     text-align: center;
     transform: translateZ(15px);
-    animation: neon .09s ease-in-out infinite alternate;
+    animation: neon .6s ease-in-out infinite alternate;
 }
 
   @keyframes neon {
@@ -152,5 +174,6 @@ l.fill:hover {
 
   .typewrite {
     font-size: 0.5em;
+    line-height: 0.8em;
     font-family: 'Bentham', serif;
   }
